@@ -1,0 +1,396 @@
+#app {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.am-list-line-top:first-child {
+  background-size: 0 0, 0 0, 100% 0px, 100% 1px !important;
+}
+
+.am-list-line-btm:last-child {
+  background-size: 0 0, 0 0, 100% 1px, 100% 0px !important;
+}
+
+.delete-line {
+  background-size: 0 0, 0 0, 100% 0px, 100% 0px !important;
+}
+
+/* 筛选 */
+.gray-title {
+  padding: 5px 15px 15px;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #999999;
+}
+
+.bd-condition {
+  margin-bottom: 10px;
+  padding: 20px 15px 17px;
+  height: 123px;
+  background: #fff;
+}
+
+.am-flexbox .am-flexbox-item {
+  height: 30px;
+  margin-left: 4%;
+  border: 0.5px solid #201D34;
+  border-radius: 4px;
+  font-size: 13px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.btn-timeSlt {
+  background-image: linear-gradient(-180deg, #464563 0%, #201D34 100%);
+  color: #FFFFFF;
+}
+
+.btn-time {
+  background: #FFFFFF;
+  color: #201D34;
+}
+
+/* .inputDate {
+  float: left;
+  width: 45%;
+  height: 36px;
+  -webkit-border-radius: 57px;
+  border-radius: 57px;
+  border: 0;
+  background: url(../img/downs.png) no-repeat 91% #F5F5F5;
+  background-size: 9px 5px;
+  -webkit-background-size: 9px 5px;
+} */
+/* input type="date"的placeholder不显示如何解决 */
+input[type="date"]:before{
+  content: attr(placeholder);
+  color:#aaa;
+}
+.inputDate .input-sdfdate {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  width: 85%;
+  padding-left: 20px;
+  background: #F5F5F5;
+  border: 0;
+  font-size: 14px;
+  color: #272727;
+  height: 36px;
+  -webkit-border-radius: 57px;
+  border-radius: 57px;
+}
+
+.dateCenter {
+  height: 1px;
+  background-color: #999999;
+  width: 34%;
+  margin: 17px 33%;
+}
+
+.double-btn {
+  margin: 30px 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 17px;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #333333;
+}
+
+.double-btn .white-btn {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid#201D34;
+  border-radius: 22px;
+  background: #fff;
+  font-size: 15px;
+}
+
+.double-btn .black-btn {
+  width: 100%;
+  height: 45px;
+  line-height: 45px;
+  border: 1px solid#201D34;
+  border-radius: 22px;
+  background-image: linear-gradient(-180deg, #464563 0%, #201d34 100%);
+  font-size: 15px;
+  color: #fff;
+}
+
+/* itemOne*/
+.ui-list-body {
+  padding: 0 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 10px;
+}
+
+.am-list-thumb {
+  flex-grow: 0;
+  margin-right: 12px;
+}
+
+.ui-sign-all {
+  border-radius: 6px;
+  padding: 0 15px;
+  background: #ffffff;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #333333;
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+.ui-sign-list {
+  padding: 11px 0;
+  flex-grow: 1;
+}
+
+.ui-item-more {
+  margin-left: 15px;
+
+}
+
+.ui-item-more img {
+  width: 8px;
+  height: 13px;
+  opacity: 0.5;
+}
+
+.ui-sign-list ul {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.ui-sign-list ul>li:first-child {
+  width: 38%;
+  font-family: PingFangSC-Regular;
+  color: #999999;
+  letter-spacing: 0;
+  font-size: 14px;
+}
+
+.ui-sign-list ul>li:last-child {
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #272727;
+  letter-spacing: 0;
+  text-align: right;
+}
+
+/* itemTwo */
+.item-two-all {
+  margin: 10px 15px 0;
+  border-radius: 6px;
+  background: #fff;
+}
+
+.item-two-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  padding: 0 15px;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+  color: #333333;
+}
+.item-two-billNo{
+  width:92%;
+  display: flex;
+  justify-content: space-between;
+}
+.line98 {
+  height: 1px;
+  background: #e1e1e1;
+  transform: scaleY(0.5);
+}
+
+.contain {
+  padding: 6px 15px 15px;
+  font-family: PingFangSC-Regular;
+  font-size: 13px;
+  color: #999999;
+  background: #fff;
+}
+
+.contain.radius {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+}
+
+.contain ul {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.contain ul>li:last-child {
+  width: 70%;
+  text-align: right;
+  color: #000;
+}
+/* 
+.bill-bank {
+  margin-left: 5px;
+  height: 18px;
+  width: 35px;
+  background: url(../img/bank.png) no-repeat center / contain;
+} */
+
+/* .bill-business {
+  margin-left: 5px;
+  height: 18px;
+  width: 35px;
+  background: url(../img/business.png) no-repeat center / contain;
+} */
+
+/* 信息确认 */
+.ui-info-item {
+  margin-top: 10px;
+  padding: 0 15px;
+}
+
+.ui-item-herder {
+  padding: 0 15px;
+  background: #fff;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 0.5px solid #e7eaee;
+}
+
+.ui-item-id {
+  margin-left: 5px;
+  width: 35px;
+  height: 18px;
+  background: #f6fcfe;
+  border: 0 solid #c1e3fc;
+  border-radius: 2px;
+  font-family: PingFangSC-Regular;
+  font-size: 11px;
+  color: #1482ff;
+  letter-spacing: 0;
+  text-align: center;
+}
+
+/* 成功页面 */
+.ui-sign-success {
+  box-sizing: border-box;
+  height: 224px;
+  padding-top: 40px;
+  background: #ffffff;
+}
+
+/* .ui-success-logo {
+  margin: 0 auto;
+  width: 114px;
+  height: 114px;
+  background: url(../../common/img/success.png) no-repeat center / contain;
+} */
+
+.ui-success-word {
+  text-align: center;
+  margin-top: 10px;
+  font-family: PingFangSC-Medium;
+  font-size: 18px;
+  color: #333333;
+}
+
+.am-list {
+  padding: 10px 0;
+  display: block;
+}
+
+/* 普通btn */
+.ui-button.black {
+  margin-top: 30px;
+  border: 1px solid#201D34;
+  background-image: linear-gradient(-180deg, #464563 0%, #201d34 100%);
+  background-color: #201d34;
+  height: 44px;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  line-height: 44px;
+  border-radius: 22px;
+}
+
+/* 全选底部btn */
+.ui-bott-btn {
+  box-shadow: 0px -2px 10px #e5e3e4;
+  background: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.all-bott {
+  height: 54px;
+  display: flex;
+  align-items: center;
+  padding-left: 15px;
+  background: #fff;
+  font-family: PingFangSC-Regular;
+  font-size: 15px;
+
+}
+
+.all-bott img {
+  height: 15px;
+  width: 15px;
+  margin-right: 15px;
+}
+
+.handle-button {
+  border: 0;
+  height: 44px;
+  width: 100%;
+  font-size: 16px;
+  color: #fff;
+  line-height: 44px;
+  display: flex;
+  border-top: 1px solid #e4e5e6;
+}
+
+.white-btn {
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  background: #fff;
+  font-size: 15px;
+  border: 1px solid#fff;
+}
+
+.black-btn {
+  width: 50%;
+  height: 45px;
+  line-height: 45px;
+  background-image: linear-gradient(-180deg, #464563 0%, #201d34 100%);
+  font-size: 15px;
+  color: #fff;
+  border: 1px solid #201d34;
+}
+
+/* 倒三角符 */
+/* .down-flag {
+  margin-left: 5px;
+  width: 10.3px;
+  height: 6px;
+  background: url(../img/downs.png) no-repeat;
+  background-size: 10.3px 6px;
+}
+ */
+/* .up-flag {
+  background: url(../img/up.png) no-repeat;
+  background-size: 10.3px 6px;
+} */
+
+.expand-color{
+  color: #ccc !important;
+}

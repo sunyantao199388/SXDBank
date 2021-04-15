@@ -81,7 +81,7 @@ tao:
 		公共资源common  css , data(json数据)，format(公共方法)，img，myCompontents(公共组件)
 		vuex--->store/index.js
 		启动项目直接点击运行到浏览器
- 
+   pages.json (配置路由，导航，tab等)
  
  
 

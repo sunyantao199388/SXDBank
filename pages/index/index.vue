@@ -1,13 +1,39 @@
 <template>
 	<view>
+		<!--  -->
 		<view class="status_bar"></view>
-		<view class="box" style="margin-top: 10rpx;">
+
+		<view class="ui-top-balance">
+			<view class="ui-nav-Box">
+				<view>
+					<view class="ui-nav-versionSwitch">版本切换</view>
+				</view>
+				<view class="ui-nav-searchBox">
+					<view class="ui-nav-searchIcon">
+
+					</view>
+					<input type="text" value="" placeholder="西安银行" />
+					<view class="ui-nav-voiceIcon">
+
+					</view>
+				</view>
+				<view></view>
+			</view>
+			<view class="ui-top-openFuture"></view>
+		</view>
+
+
+
+
+
+
+		<!-- 		<view class="box" style="margin-top: 10rpx;">
 			<view @click="chooseCard">
 				<authRow title="卡号" :val="$Fw.fmtAcctNo(accNo,true)"></authRow>
 			</view>
 			<authRow title="余额" :val="'¥ '+$Fw.fmtAmt(val_balance)"></authRow>
 		</view>
-		<authBtn btnName="跳转" @next="goPages" />
+		<authBtn btnName="跳转" @next="goPages" /> -->
 	</view>
 </template>
 
@@ -15,6 +41,7 @@
 	import authRow from "../../common/myComponents/authRow.vue";
 	import authBtn from "../../common/myComponents/authBtn";
 	import operAccListQueryResult from '../../common/data/account/operAccListQuery.js'
+	import uniNavBar from '@/components/uni-nav-bar/uni-nav-bar.vue'
 	import {
 		mapMutations,
 		mapState
@@ -27,7 +54,8 @@
 		},
 		components: {
 			authRow,
-			authBtn
+			authBtn,
+			uniNavBar
 		},
 		computed: {
 			...mapState(['accNo', 'val_balance'])
@@ -104,9 +132,6 @@
 		width: 100%;
 	}
 
-	.cu-custom .cu-bar {
-		height: 50px;
-	}
 
 	.ui-scan {
 		background: url(../../common/img/001.png) no-repeat;
@@ -114,5 +139,41 @@
 		width: 20px;
 		height: 15px;
 		margin-right: 10px;
+	}
+
+	.ui-top-balance {
+		background: url(../../common/img/investmentBak.png) no-repeat;
+		background-size: 100% 100%;
+		height: 146px;
+		width: 100%;
+		box-sizing: border-box;
+	}
+
+	.ui-top-openFuture {
+		background: url(../../common/img/openFuture.png) no-repeat;
+		background-size: 54% 39%;
+		height: 146px;
+		width: 100%;
+		box-sizing: border-box;
+		margin-left: 15px;
+		margin-top: 27px
+	}
+
+	.ui-nav-Box {
+		display: flex;
+		padding-top: 2px;
+		    font-family: PingFangSC-Regular;
+
+	}
+	.ui-nav-versionSwitch {
+		width: 90px;
+		height: 22px;
+		border-radius: 10px;
+		background-color: #fff;
+		text-align: center;
+		line-height: 22px;
+		font-size: 12px;
+		color: #333333;
+		letter-spacing: 0;
 	}
 </style>

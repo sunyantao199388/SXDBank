@@ -1,8 +1,6 @@
 import Vue from 'vue'
 import App from './App'
 import store from './store'
-import cuCustom from 'colorui/components/cu-custom.vue'
-Vue.component('cu-custom', cuCustom)
 import Fw from 'common/format/Fw.js'
 Vue.config.productionTip = false
 Vue.prototype.$Fw = Fw.Formats;

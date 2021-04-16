@@ -4,7 +4,6 @@
 	} from 'vuex'
 	export default {
 		onLaunch: function() {
-			console.log('App Launch');
 			// #ifdef APP-PLUS
 			// App平台检测升级，服务端代码是通过uniCloud的云函数实现的，详情可参考：https://ext.dcloud.net.cn/plugin?id=2226
 			if (plus.runtime.appid !== 'HBuilder') { // 真机运行不需要检查更新，真机运行时appid固定为'HBuilder'，这是调试基座的appid
@@ -93,8 +92,6 @@
 	@import './common/uni.css';
 	@import './common/css/core.css';
 	@import './common/css/owner.css';
-	@import "colorui/main.css";
-	@import "colorui/icon.css";
 
 	/* H5 兼容 pc 所需 */
 	/* #ifdef H5 */
